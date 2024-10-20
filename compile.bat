@@ -13,7 +13,7 @@ set "FLAGS=%FLAGS% /W3"
 :: Max optimization (favor speed)
 set "FLAGS=%FLAGS% /O2"
 :: Max optimization (favor output size)
-REM set "FLAGS=%FLAGS% /O1"
+:: set "FLAGS=%FLAGS% /O1"
 
 set "SOURCE_FILES=./src/main.c ./src/glad.c"
 set "OUT_FILENAME=./bin/main.exe"
