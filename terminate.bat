@@ -1,0 +1,1 @@
+powershell -Command "Remove-MpPreference -ExclusionPath './bin/'"
